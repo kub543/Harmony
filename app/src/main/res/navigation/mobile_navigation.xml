@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.harmonyapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_learn"
+        android:name="com.example.harmonyapp.ui.learn.LearnFragment"
+        android:label="@string/title_learn"
+        tools:layout="@layout/fragment_learn" >
+        <action
+            android:id="@+id/action_navigation_learn_to_triadsLearn"
+            app:destination="@id/triadsLearn" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_practice"
+        android:name="com.example.harmonyapp.ui.practice.PracticeFragment"
+        android:label="@string/title_practice"
+        tools:layout="@layout/fragment_practice" >
+        <action
+            android:id="@+id/action_navigation_practice_to_allKeysFragment"
+            app:destination="@id/allKeysFragment" />
+        <action
+            android:id="@+id/action_navigation_practice_to_sharpKeysFragment"
+            app:destination="@id/sharpKeysFragment" />
+        <action
+            android:id="@+id/action_navigation_practice_to_flatKeysFragment"
+            app:destination="@id/flatKeysFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/triadsLearn"
+        android:name="com.example.harmonyapp.ui.learn.TriadsLearnFragment"
+        android:label="triads_learn_fragment"
+        tools:layout="@layout/triads_learn_fragment" >
+        <action
+            android:id="@+id/action_triadsLearn_to_navigation_learn"
+            app:destination="@id/navigation_learn" />
+    </fragment>
+    <fragment
+        android:id="@+id/allKeysFragment"
+        android:name="com.example.harmonyapp.AllKeysFragment"
+        android:label="fragment_all_keys"
+        tools:layout="@layout/fragment_all_keys" >
+        <action
+            android:id="@+id/action_allKeysFragment_to_navigation_practice"
+            app:destination="@id/navigation_practice" />
+    </fragment>
+    <fragment
+        android:id="@+id/sharpKeysFragment"
+        android:name="com.example.harmonyapp.SharpKeysFragment"
+        android:label="fragment_sharp_keys"
+        tools:layout="@layout/fragment_sharp_keys" >
+        <action
+            android:id="@+id/action_sharpKeysFragment_to_navigation_practice"
+            app:destination="@id/navigation_practice" />
+    </fragment>
+    <fragment
+        android:id="@+id/flatKeysFragment"
+        android:name="com.example.harmonyapp.FlatKeysFragment"
+        android:label="fragment_flat_keys"
+        tools:layout="@layout/fragment_flat_keys" >
+        <action
+            android:id="@+id/action_flatKeysFragment_to_navigation_practice"
+            app:destination="@id/navigation_practice" />
+    </fragment>
+</navigation>

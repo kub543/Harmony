@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.492" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.492" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/drawable/ic_favorite_24dp.xml" value="0.2205" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.492" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.492" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.492" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/activity_all_practice.xml" value="0.25104166666666666" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/app_bar.xml" value="0.30434782608695654" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/flat_fibonaci.xml" value="0.49166666666666664" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/fragment_Learn.xml" value="0.4875" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/fragment_all_keys.xml" value="0.49166666666666664" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/fragment_all_practice.xml" value="0.374805598755832" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.4875" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/fragment_flat_keys.xml" value="0.49166666666666664" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/fragment_home.xml" value="0.4875" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/fragment_learn.xml" value="0.2484375" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/fragment_notifications.xml" value="0.4875" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/fragment_practice.xml" value="0.41025641025641024" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/fragment_sharp_keys.xml" value="0.27898550724637683" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/practice_card.xml" value="0.5871559633027523" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/top_bar.xml" value="0.27898550724637683" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/triads_learn_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/layout/triads_lern_fragment.xml" value="0.4875" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.4875" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/menu/top_app_bar.xml" value="0.49583333333333335" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.492" />
+        <entry key="..\:/Users/kkk/AndroidStudioProjects/HarmonyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.492" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.4875" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

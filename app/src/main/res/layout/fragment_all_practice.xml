@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="practiceViewModel"
+            type="com.example.harmonyapp.ui.main.PageViewModel" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ui.learn.TriadsLearnFragment">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="56dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="292dp"
+                    android:layout_height="196dp"
+                    android:src="@drawable/fibonaci"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.277"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.146" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/C_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="28dp"
+                    android:text="@string/C"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/C)}"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.686" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/a_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="20dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/a)}"
+                    android:text="@string/a"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/C_Key"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.895" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/F_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginEnd="128dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/F)}"
+                    android:text="@string/F"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/d_Key"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="124dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/d)}"
+                    android:text="@string/d"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="0.422"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/B_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginEnd="104dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/B)}"
+                    android:text="@string/B"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Es_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="252dp"
+                    android:layout_marginTop="168dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/Es)}"
+                    android:text="@string/Es"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/As_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="252dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/As)}"
+                    android:text="@string/As"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.156" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Des_Key"
+                    android:layout_width="47dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="164dp"
+                    android:layout_marginBottom="164dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/Des)}"
+                    android:text="@string/Des"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Ges_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="148dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/Ges)}"
+                    android:text="@string/Ges"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="0.213"
+                    app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Ces_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="212dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/Ces)}"
+                    android:text="@string/Ces"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.614" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/g_key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="216dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/g)}"
+                    android:text="@string/g"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="0.483"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/c_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="200dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/c)}"
+                    android:text="@string/c"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="0.967"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/f_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="236dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/f)}"
+                    android:text="@string/f"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.385" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/b_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="24dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/b)}"
+                    android:text="@string/b"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="0.614"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/es_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="108dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/es)}"
+                    android:text="@string/es"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="0.327"
+                    app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/as_Key"
+                    android:layout_width="48dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="204dp"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/as)}"
+                    android:text="@string/as"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.816" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/D_Key"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="180dp"
+                    android:text="@string/D"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/D)}"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="0.731"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/G_Key"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginEnd="96dp"
+                    android:text="@string/G"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/G)}"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="160dp"
+                    android:text="@string/A"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/A)}"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/E_Key"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="292dp"
+                    android:text="@string/E"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/E)}"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.145" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/H_Key"
+                    android:layout_width="46dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="208dp"
+                    android:layout_marginBottom="164dp"
+                    android:text="@string/H"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/H)}"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Fis_Key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="148dp"
+                    android:text="@string/Fis"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/Fis)}"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Cis_Key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="72dp"
+                    android:layout_marginEnd="260dp"
+                    android:text="@string/Cis"
+                    android:onClick="@{() -> practiceViewModel.getKey(@string/Cis)}"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="371dp"
+            android:layout_height="376dp"
+            android:layout_marginBottom="312dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <Button
+                android:id="@+id/random_button"
+                style="@style/Widget.Design.FloatingActionButton"
+                android:layout_width="99dp"
+                android:layout_height="96dp"
+                android:layout_marginBottom="140dp"
+                android:fontFamily="cursive"
+                android:text="LOSUJ!"
+                android:textSize="21sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@{practiceViewModel.resultText}"
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/random_button"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

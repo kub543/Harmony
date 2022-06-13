@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">HarmonyApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_learn">Learn</string>
+    <string name="title_practice">Practice</string>
+    <string name="sharpkey">SharpKey</string>
+    <string name="flatkey">FlatKey</string>
+    <string name="F">F</string>
+    <string name="C">C</string>
+    <string name="a">a</string>
+    <string name="d">d</string>
+    <string name="B">B</string>
+    <string name="g">g</string>
+    <string name="Es">Es</string>
+    <string name="c">c</string>
+    <string name="As">As</string>
+    <string name="f">f</string>
+    <string name="Des">Des</string>
+    <string name="b">b</string>
+    <string name="Ges">Ges</string>
+    <string name="es">es</string>
+    <string name="Ces">Ces</string>
+    <string name="as">as</string>
+    <string name="progressBar">postępy:</string>
+    <string name="description">TextView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favorite">ulubione</string>
+    <string name="content_description_favorite">zawiera</string>
+    <string name="search">szukaj</string>
+    <string name="content_description_search">szukane</string>
+    <string name="more">więcej</string>
+    <string name="content_description_more">zawiera</string>
+    <string name="page_title">tytuł</string>
+    <string name="title_activity_all_practice">AllPracticeActivity</string>
+    <string name="tab_text_1">Subdominanta</string>
+    <string name="tab_text_2">Dominanta</string>
+    <string name="Tab_3">Sub/Domin</string>
+    <string name="Cis">Cis</string>
+    <string name="Fis">Fis</string>
+    <string name="H">H</string>
+    <string name="E">E</string>
+    <string name="A">A</string>
+    <string name="G">G</string>
+    <string name="D">D</string>
+</resources>
